@@ -10,12 +10,16 @@
 <body id="home">
 
 <?php include "parts/header.php";?>
-
-
-
 <div id="templatemo_main">
-
-
+	<div id="menu_body">
+		<?php wp_nav_menu( array(
+			'menu' => 'uslugi',));
+		?>
+	</div>
+	<div id ="content">
+		<h1><?php echo get_post_field('post_title', $post->ID); ?></h1>
+		<?php echo get_post_field('post_content', $post->ID); ?>
+	</div>
 </div> <!-- END of templatemo_main -->
 
 <?php include "parts/footer.php";?>

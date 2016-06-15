@@ -15,12 +15,7 @@
 	
   <div id="menu">
   <ul>
-   <li><a href="../../../../univ/ab_history.php">История заводов</a><br></li>
-   <li><a href="../../../../univ/ab_dostizheniya.php">Наши достижения</a><br></li>
-   <li><a href="../../../../univ/ab_pressa.php">Пресса о нас</a><br></li>
-   <li><a href="../../../../univ/ab_lizenz.php">Лицензии</a><br></li>
-   <li><a href="../../../../univ/ab_sertificats.php">Сертификаты</a><br></li>
-   <li><a href="../../../../univ/ab_partners.php">Наши партнеры</a><br></li>
+
 	</ul>
   </div>
   <div id="content">

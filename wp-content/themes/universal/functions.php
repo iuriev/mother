@@ -367,3 +367,9 @@ require get_template_directory() . '/inc/template-tags.php';
  * @since Twenty Fifteen 1.0
  */
 require get_template_directory() . '/inc/customizer.php';
+
+require get_template_directory(). '/krep.php';
+
+require get_template_directory(). '/kombains.php';
+
+require get_template_directory(). '/stoiki.php';

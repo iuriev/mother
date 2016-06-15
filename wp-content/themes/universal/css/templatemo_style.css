@@ -6,12 +6,7 @@ list-style-type:disc;
 #menu { 
   float: right;
   width:140px;
-}
 
-#menu, #menu ul{
-  list-style-type: none;
-  padding: 10px 0px;
-  margin: 0;
 }
 
 #q { 
@@ -54,25 +49,47 @@ color:#FF1205;
 	 text-decoration: none;
    }
 
+#menu-product{
+	 margin:0px;
+	 padding:0px;
+	 margin-top: 25px;
+ }
 
+#menu-uslugi{
+	margin:0px;
+	padding:0px;
+}
+#menu-uslugi li a:link{
+	color: #000000;
+	text-decoration: none;
+	font-size: 120%;
+	font-family: Tahoma;
+	line-height:1.4em;
 
+}
+#menu-personal{
+	margin:0px;
+	padding:0px;
+	margin-top: 25px;
+}
+#menu-personal li a:link{
+	color: #000000;
+	text-decoration: none;
+	font-size: 120%;
+	font-family: Tahoma;
+	line-height:1.4em;
+	padding: 0px;
+
+}
 #menu_body ul li {
     list-style-type: none;
     padding-left: 0px;
     } 
 #menu_body{
-padding:20px 20px;
-   width:140px;
+	padding: 0px;
+	margin: 0px;
    float:left;
    }
-#menu_body ul li a {
-    color: #000000;
-    text-decoration: none;
-	font-size: 110%;
-	font-family: Tahoma;
-	line-height:1.4em;
-	
-    } 
 
 #menu_body ul li a:hover {
  color:#1424FF;
@@ -242,7 +259,7 @@ margin: 0 0 5px;
 }
 
 #templatemo_header_wrapper {/*описание блока хеадер */
-	width: 960px;
+	width: 950px;
 	margin: 0 auto;
 	padding: 10px 20px;
 	background: url(../images/templatemo_header_dividier.png) repeat-x bottom
@@ -255,9 +272,9 @@ margin: 0 0 5px;
 }
 
 #templatemo_main {/* описание основного блока*/
-	width: 960px;
+	width: 1000px;
 	margin: 0 auto;
-	padding: 0 20px;
+	padding: 20px 20px;
 	background: #D3D4D6;
 	border: 1px solid #fff;
 	-webkit-border-radius: 21px;
@@ -276,20 +293,20 @@ border-radius: 21px;
 #templatemo_bottom_wrapper {/*описание обертки футерра*/
 	margin: 0 auto;
     padding: 10px 20px;
-    width: 960px;
+    width: 950px;
 	height:140px;
-	
+	background: url(../images/templatemo_header_dividier.png) repeat-x top
 	
 	/*background: #272525;*/
 }
 
 #templatemo_bottom {/* описание основного поля футера */
-	width: 960px;
+	width: 1000px;
 	margin: 0 auto;
 	padding: 0 10px 20px;
 }
 #templatemo_footer {/*описание футера автор */
-	width: 960px;
+	width: 1000px;
 	margin: 0 auto;
 	padding: 10px;
 	text-align: center;
@@ -406,6 +423,10 @@ border-radius: 21px;
 .cleaner { /* обтекани е элемента*/
 clear: both
  }
+#content  h1 {
+
+	color: black;
+}
  
  .h10 { height: 10px }
 .h20 { height: 20px }
