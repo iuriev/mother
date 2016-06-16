@@ -15,7 +15,7 @@
             else if (stristr($_SERVER['REQUEST_URI'],'/about') ){
                     wp_nav_menu(array(
                     'menu' => 'about',));
-        }
+        }  
         ?>
 	</div>
 

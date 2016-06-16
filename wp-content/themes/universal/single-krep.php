@@ -7,7 +7,7 @@
             'menu' => 'product',));
         ?>
     </div>
-    <?php $query = new WP_Query( array('post_type' => 'krep' ) );
+    <?php $query = new WP_Query( array('post_type' => 'krep', 'name' => $post->post_name ) );
         while ( $query->have_posts() ) : $query->the_post();
             the_content();
             wp_reset_postdata();

@@ -16,31 +16,31 @@
 
                 <h4><?php $post_type = get_post_type_object( get_post_type($post) );
                     echo $post_type->label ; ?> </h4>
-                <a href="<?php   echo get_permalink(); ?>"><?php the_post_thumbnail(); ?></a>
+                <a href="<?php   echo get_post_type(); ?>"><?php the_post_thumbnail(); ?></a>
                 <?php  wp_reset_postdata();?>
             </div>
             <?php
         endwhile; ?>
 
         <?php
-        $query = new WP_Query( array('post_type' => 'stoika','posts_per_page=1' ) );
+        $query = new WP_Query( array('post_type' => 'stoika','posts_per_page' => '1' ) );
         while ( $query->have_posts() ) : $query->the_post(); ?>
             <div id="photo">
                 <h4><?php $post_type = get_post_type_object( get_post_type($post) );
                     echo $post_type->label ; ?> </h4>
-                <a href="<?php   echo get_permalink(); ?>"><?php the_post_thumbnail(); ?></a>
+                <a href="<?php   echo get_post_type(); ?>"><?php the_post_thumbnail(); ?></a>
                 <?php  wp_reset_postdata();?>
             </div>
             <?php
         endwhile; ?>
 
         <?php
-        $query = new WP_Query( array('post_type' => 'kombain','posts_per_page=1' ) );
+        $query = new WP_Query( array('post_type' => 'kombain','posts_per_page' => '1' ) );
         while ( $query->have_posts() ) : $query->the_post(); ?>
             <div id="photo">
                 <h4><?php $post_type = get_post_type_object( get_post_type($post) );
                     echo $post_type->label ; ?> </h4>
-                <?php the_post_thumbnail(); ?></a>
+                <a href="<?php   echo get_post_type(); ?>"><?php the_post_thumbnail(); ?></a>
                 <?php  wp_reset_postdata();?>
             </div>
             <?php

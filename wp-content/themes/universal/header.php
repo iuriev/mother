@@ -44,8 +44,8 @@
                  stristr($_SERVER['REQUEST_URI'],'/food'))
                 {echo 'class = "active_punkt"';}?> href="<?php echo (get_home_url()."/personal")?>">Сотрудникам</a></li>
 
-            <li><a <?php if (stristr($_SERVER['REQUEST_URI'],'new'))
-                {echo 'class = "active_punkt"';}?> href="<?php echo (get_home_url()."/news")?>">Новости</a></li>
+            <li><a <?php if (stristr($_SERVER['REQUEST_URI'],'our-news'))
+                {echo 'class = "active_punkt"';}?> href="<?php echo (get_home_url()."/our-news")?>">Новости</a></li>
 
             <li><a <?php if (stristr($_SERVER['REQUEST_URI'],'contact'))
                 {echo 'class = "active_punkt"';}?> href="<?php echo (get_home_url()."/contact")?>">Контакты</a></li>

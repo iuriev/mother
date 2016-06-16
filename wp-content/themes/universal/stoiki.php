@@ -1,5 +1,5 @@
 <?php
-function stoika_init() {
+function stoik_init() {
     $args = array(
         'label' => 'Стойки', 
         'singular_name' => 'Стойка',
@@ -14,7 +14,7 @@ function stoika_init() {
         'show_ui' => true,
         'capability_type' => 'post',
         'hierarchical' => false,
-        'rewrite' => array('slug' => 'stoika'),
+        'rewrite' => array('slug' => 'stoik'),
         'query_var' => true,
         'menu_icon' => '',
         'supports' => array(
@@ -22,10 +22,10 @@ function stoika_init() {
             'editor',
             'thumbnail',)
         );
-    register_post_type( 'stoika', $args );
+    register_post_type( 'stoik', $args );
 }
 
-add_action( 'init', 'stoika_init' );
+add_action( 'init', 'stoik_init' );
 
 
 

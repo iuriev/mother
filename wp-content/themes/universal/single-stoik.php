@@ -7,11 +7,9 @@
             'menu' => 'product',));
         ?>
     </div>
-    <?php $query = new WP_Query( array('post_type' => 'stoika' ) );
+    <?php $query = new WP_Query( array('post_type' => 'stoik' ) );
         while ( $query->have_posts() ) : $query->the_post();
-            if ( has_post_thumbnail() ) {
-                the_post_thumbnail();
-            }
+            
             the_content();
             wp_reset_postdata();
         endwhile; ?>

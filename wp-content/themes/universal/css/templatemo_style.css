@@ -143,7 +143,11 @@ ul .sub-menu{
     margin-left: 240px; /* Отступ слева */
     margin-bottom: 15px; /* Отступ снизу */
 }
+#content.news_block{
 
+    margin-left: 10px; /* Отступ слева */
+    margin-bottom: 15px; /* Отступ снизу */
+}
 #content p {
     font-size: 120%; /* Размер шрифта */
     text-align: justify; /* Выравнивание по ширине */
@@ -152,7 +156,40 @@ ul .sub-menu{
 	text-indent: 20px;
 	line-height:1.2em;
 }
+.news{
+    list-style-type: none;
+    font-size: 150%;
+    display: inline;
+    text-align: center;
 
+}
+#news-block{
+    margin-bottom: 30px;
+    height: 200px;
+    border-bottom: 1px solid black;
+}
+
+#news-block img{
+    float: left;
+    text-align: center;
+}
+#news-block > a{
+    display: block;
+    vertical-align: top;
+    text-align: center;
+    font-size: 160%;
+}
+#news-block p{
+    display: block;
+    text-align: center;
+    font-size: 100%;
+}
+
+#current-news{
+    display: block;
+    text-align: center;
+    font-size: 100%;
+}
 div.fixed_pos{
 position:fixed;
 right:0px;
