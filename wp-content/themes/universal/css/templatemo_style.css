@@ -1,27 +1,24 @@
+a{
+	color: #000000; /* Цвет обычной ссылки */
+	text-decoration: none;
+}
+#photo{
+	float: left;
+	margin-right: 50px;
+}
+
 #menu ul li{
 list-style-type:disc;
 }
 
-
 #menu { 
   float: right;
   width:140px;
-
-}
-
-#q { 
-  cursor:pointer;
-  background: url(../images/arrows_25x50.png) no-repeat right top;
-  width:150px;
-  
- 
 }
 
 #menu li a {
   text-decoration: none;
 }
-
-
 
 #menu li li{ 
   cursor:auto;
@@ -37,59 +34,90 @@ list-style-type:disc;
 .active_topic{
 color:#FF1205;
 
-
 }
 #menu  li a.active_top{
 color:#FF1205;
-
 }
 
- a {
-    color: #000000; /* Цвет обычной ссылки */
-	 text-decoration: none;
-   }
-
+ul .sub-menu{
+	font-size: 80%;
+}
+#menu_body p img{
+	margin-left: 30px;
+	padding-left: 50px;
+}
 #menu-product{
 	 margin:0px;
 	 padding:0px;
-	 margin-top: 25px;
- }
+}
 
+#menu-product li {
+	color: #000000;
+	text-decoration: none;
+	font-family: Tahoma;
+	line-height: 1.4em;
+}
+
+
+#menu-product li a:link{
+	color: #000000;
+	text-decoration: none;
+	font-family: Tahoma;
+	font-size: 140%;
+	line-height:1.6em;
+
+}
+#menu-about{
+	margin:0px;
+	padding:0px;
+	margin-top: 25px;
+	height: 200px;
+}
+#menu-about li a:link{
+	color: #000000;
+	text-decoration: none;
+	font-size: 140%;
+	font-family: Tahoma;
+	line-height:1.6em;
+}
 #menu-uslugi{
 	margin:0px;
 	padding:0px;
+	height: 200px;
 }
 #menu-uslugi li a:link{
 	color: #000000;
 	text-decoration: none;
-	font-size: 120%;
 	font-family: Tahoma;
-	line-height:1.4em;
-
+	font-size: 140%;
+	line-height:1.6em;
 }
 #menu-personal{
 	margin:0px;
 	padding:0px;
 	margin-top: 25px;
+	height: 200px;
 }
 #menu-personal li a:link{
 	color: #000000;
 	text-decoration: none;
-	font-size: 120%;
 	font-family: Tahoma;
-	line-height:1.4em;
-	padding: 0px;
+	font-size: 140%;
+	line-height:1.6em;
 
 }
-#menu_body ul li {
-    list-style-type: none;
-    padding-left: 0px;
-    } 
+
 #menu_body{
 	padding: 0px;
 	margin: 0px;
-   float:left;
+    float:left;
+	margin-right: 30px;
+
    }
+#menu_body ul li {
+	list-style-type: none;
+	padding-left: 0px;
+}
 
 #menu_body ul li a:hover {
  color:#1424FF;
@@ -98,43 +126,31 @@ color:#FF1205;
     } 
 
 #menu_body ul li ul li {
-
     border: 0;
     list-style-type: none;
     color: #fff;
     list-style-position: inside;
-padding: 0 20px;
-
-    } 
-
-#menu_body ul li ul{
-   
-    padding-left: 20px;
-    }
-   
-   
- 
-   #menu { /* Навигация по сайту */
-   font-size: 20px; 
-   line-height:1.5em;
-    width: 200px; /* Ширина меню */
+	padding: 0 20px;
+}
+#menu { /* Навигация по сайту */
+    font-size: 20px;
+    line-height:1.5em;
+	width: 200px; /* Ширина меню */
     float: left; /* Состыковка с другим слоем по горизонтали */
+}
    
-   }
-   
-   #content { /* Основное содержание страницы */
-    margin-left: 210px; /* Отступ слева */
+#content { /* Основное содержание страницы */
+    margin-left: 240px; /* Отступ слева */
     margin-bottom: 15px; /* Отступ снизу */
+}
 
-   }
-   #content p { 
+#content p {
     font-size: 120%; /* Размер шрифта */
     text-align: justify; /* Выравнивание по ширине */
     padding: 2px; /* Поля вокруг текста */
     margin: 10px ;/* Обнуляем отступы */
-	 text-indent: 20px;
-	 line-height:1.2em;
-
+	text-indent: 20px;
+	line-height:1.2em;
 }
 
 div.fixed_pos{
@@ -153,10 +169,7 @@ body {/*описание для тела */
 	color: #6e6e6e;/*серый*/
 	font-family: Tahoma, Geneva, sans-serif;
 	font-size: 17px;
-	line-height: 1em; 
-	/* background-repeat: repeat;
-	background-position: top;
-	*/
+	line-height: 1em;
 }
 
 a, a:link{ /* описание ссылок*/
@@ -166,59 +179,49 @@ a, a:link{ /* описание ссылок*/
 	
 }
 
-a:hover { /* ссылки при наведении*/
+a:hover {
 	text-decoration: none;
 	color: #1424FF; 
 }
 
 
 
-p { /* абзац*/
+p {
 	margin: 0 0 10px 0; 
 	padding: 0; 
 }
 
-img {/* картинки*/ 
-	border: none;/* */
-}
-
-cite a, cite a:link, cite a:visited  { /*описание автора отзыва*/
-	font-size: 12px; 
-	text-decoration: none; 
-	font-style: normal;
-}
-
-cite span { /*описание автора отзыва*/
-	font-weight: 400; 
-	color: #7f0d0d; 
+img {
+	border: none;
 }
 
 
-h1{ /* Описание заголовков*/
+h1{ /
  font-size: 30px; 
  margin: 0 0 ;
  padding: 5px 0 ;
  text-align:center;
  line-height: 1;
  color: #FFFFFF; 
-font-weight: normal;
+ font-weight: normal;
  }
- h1.name{
- font-size: 45px;
-  line-height: 1.1;
-  letter-spacing: 5px;
+
+h1.name{
+ 	font-size: 45px;
+	line-height: 1.1;
+  	letter-spacing: 5px;
 
 }
 h2 { /* */
-color: #FFFFFF; 
-font-weight: normal;
-font-size: 20px; 
-margin: 0 0 15px; 
-padding: 5px 0 ;
-line-height: 1;}
- h5{ 
-color: #3A3A3A;
- }
+	color: #FFFFFF;
+	font-weight: normal;
+	font-size: 20px;
+	margin: 0 0 15px;
+	padding: 5px 0 ;
+	line-height: 1;}
+h5{
+	color: #3A3A3A;
+}
 h3 { 
 color:#000000; 
 font-weight: normal;
@@ -248,12 +251,11 @@ margin: 0 0 5px;
  padding: 0; 
  }
 
-
-
-#home { /* фон главной */
-	background-image: url(../images/1023.png);  
-	
+body {
+	background-image: url(../images/1023.png);
 }
+
+
 #subpage { /*фон всех страниц крме главной */
 	background-image: url(../images/1023.png);  
 }
@@ -278,8 +280,8 @@ margin: 0 0 5px;
 	background: #D3D4D6;
 	border: 1px solid #fff;
 	-webkit-border-radius: 21px;
--moz-border-radius: 21px;
-border-radius: 21px;
+	-moz-border-radius: 21px;
+	border-radius: 21px;
 	color:#000000;
 }
 
@@ -449,35 +451,14 @@ clear: both
 
 .about_box img { 
 	float: left; 
-	margin-right: 40px; 
+	margin-right: 40px;
 }
 
 .about_box h4 { 
-	font-size: 14px; 
+	font-size: 14px;
 	font-weight: bold; 
 	font-style: italic; 
 	margin-bottom: 0px; 
-}
-.templatemo_list { /* описание списка новостей*/
-	margin: 10px 0 10px 15px; 
-	padding: 0; 
-	list-style: none; 
-}
-
-.templatemo_list li { /* описание для каждой новости*/
-	color:#52493a; 
-	margin: 0 0 10px 0; 
-	padding: 0 5px 0 15px; 
-	background: url(../images/templatemo_list.png) no-repeat scroll 0 4px;  
-}
-
-.templatemo_list li a { /* описание для каждой ссыки в новостях*/
-	color: #52493a; 
-	font-weight: normal; 
-}
-
-.templatemo_list li a:hover { /*описание для каждой ссыки в новостях при наведении */
-	color: #52493a; 
 }
 .pagging { 
 	margin: 0 0 20px; 
@@ -551,13 +532,7 @@ float: left;
 	font-size: 11px; 
 }
 
-.testimonial { /* описание отзывов*/
-	padding: 0 0 20px 70px; 
-	margin-bottom: 30px; 
-	border-bottom: 1px dotted #ced4dc; 
-	display: block; 
-	background: url(/wp-content/themes/universal/images/speech_bubble_grey.png) left top no-repeat;
-}
+
 .footer_list li { /* описание футера*/
 	margin: 0 0 ; 
 	padding: 0 0 ; 
@@ -574,13 +549,9 @@ float: left;
 	margin: 0 20px 20px 0; 
 		line-height:1.5em;
 }
-
-
-
 .one_fourth { /* описание карусели*/
 	width: 300px; 
 }
-
 .no_margin_right { /* */
 	margin-right: 0; 
 }
@@ -589,7 +560,6 @@ float: left;
 	border: 1px solid #fff; 
 	color: #fff;  
 }
-
 .ddsmoothmenu ul li .active_punkt {/* */
 	color: #FF1205;
 }

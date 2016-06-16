@@ -1,28 +1,31 @@
-<!DOCTYPE HTML>
-<head>
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-	<title>"ЧАО"ГМЗ"УНИВЕРСАЛ" - Главная</title>
-	<meta name="keywords" content="создание сайтов, веб-дизайн, поддержка сайтов" />
-	<meta name="description" content="Webstudio - компания по разработке сайтов" />
+<?php get_header();?>
 
-	<?php include "parts/main_preheader.php";?>
-
-<body id="home">
-
-<?php include "parts/header.php";?>
 <div id="templatemo_main">
+
 	<div id="menu_body">
-		<?php wp_nav_menu( array(
-			'menu' => 'uslugi',));
-		?>
+        <?php
+        if (stristr($_SERVER['REQUEST_URI'],'/uslugi') ) {
+            wp_nav_menu( array(
+                'menu' => 'uslugi',));
+        }
+        else if (stristr($_SERVER['REQUEST_URI'],'/personal') ){
+            wp_nav_menu( array(
+            'menu' => 'personal',));
+            }
+            else if (stristr($_SERVER['REQUEST_URI'],'/about') ){
+                    wp_nav_menu(array(
+                    'menu' => 'about',));
+        }
+        ?>
 	</div>
+
 	<div id ="content">
 		<h1><?php echo get_post_field('post_title', $post->ID); ?></h1>
 		<?php echo get_post_field('post_content', $post->ID); ?>
 	</div>
+    
+    <div class="cleaner"></div>
 </div> <!-- END of templatemo_main -->
 
-<?php include "parts/footer.php";?>
+<?php get_footer();?>
 
-</body>
-</html>

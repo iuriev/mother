@@ -1,39 +1,53 @@
-<!DOCTYPE HTML>
-<head>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title>"ЧАО"ГМЗ"УНИВЕРСАЛ" - Главная</title>
-    <meta name="keywords" content="" />
-    <meta name="description" content="" />
+<?php get_header();?>
 
-    <?php include "parts/main_preheader.php";?>
-
-<body id="home">
-
-<?php include "parts/header.php";?>
 <div id="templatemo_main">
-
     <div id="menu_body">
-<h3>Наша продукция: </h3>
+        <h3>Наша продукция: </h3>
             <?php wp_nav_menu( array(
-
                 'menu' => 'product',));
             ?>
     </div>
-
-
-
     <div id ="content">
 
+        <?php
+        $query = new WP_Query( array('post_type' => 'krep','posts_per_page' => '1' ) );
+        while ( $query->have_posts() ) : $query->the_post(); ?>
+            <div id="photo">
+
+                <h4><?php $post_type = get_post_type_object( get_post_type($post) );
+                    echo $post_type->label ; ?> </h4>
+                <a href="<?php   echo get_permalink(); ?>"><?php the_post_thumbnail(); ?></a>
+                <?php  wp_reset_postdata();?>
+            </div>
+            <?php
+        endwhile; ?>
+
+        <?php
+        $query = new WP_Query( array('post_type' => 'stoika','posts_per_page=1' ) );
+        while ( $query->have_posts() ) : $query->the_post(); ?>
+            <div id="photo">
+                <h4><?php $post_type = get_post_type_object( get_post_type($post) );
+                    echo $post_type->label ; ?> </h4>
+                <a href="<?php   echo get_permalink(); ?>"><?php the_post_thumbnail(); ?></a>
+                <?php  wp_reset_postdata();?>
+            </div>
+            <?php
+        endwhile; ?>
+
+        <?php
+        $query = new WP_Query( array('post_type' => 'kombain','posts_per_page=1' ) );
+        while ( $query->have_posts() ) : $query->the_post(); ?>
+            <div id="photo">
+                <h4><?php $post_type = get_post_type_object( get_post_type($post) );
+                    echo $post_type->label ; ?> </h4>
+                <?php the_post_thumbnail(); ?></a>
+                <?php  wp_reset_postdata();?>
+            </div>
+            <?php
+        endwhile; ?>
+        
     </div>
-
-
     <div class="cleaner"></div>
-</div>
-
-
 </div> <!-- END of templatemo_main -->
 
-<?php include "parts/footer.php";?>
-
-</body>
-</html>
+<?php get_footer();?>

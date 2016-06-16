@@ -373,3 +373,5 @@ require get_template_directory(). '/krep.php';
 require get_template_directory(). '/kombains.php';
 
 require get_template_directory(). '/stoiki.php';
+
+require get_template_directory(). '/news.php';
